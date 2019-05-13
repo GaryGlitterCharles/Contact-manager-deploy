@@ -5,11 +5,11 @@ const path = require('path');
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static('./dist/ag-grid'));
+app.use(express.static('./dist/Ag-Grid'));
 
 app.get('/*', function(req,res) {
     
-res.sendFile(path.join(__dirname,'/dist/ag-grid/index.html'));
+res.sendFile(path.join(__dirname,'/dist/Ag-Grid/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
